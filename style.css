@@ -119,6 +119,8 @@ header > p {
   color: var(--lightGrayishMagenta);
   padding-top: 0.3em;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .comment_card > .title {
