@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-color: var(--white);
+  font-size: 15px;
+}
+
+.container {
+  margin: auto 24px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------- HEADER ---------------- */
+
+header {
+  margin-top: 5.4em;
+  margin-bottom: 3.133em;
+  width: 100%;
+}
+
+header > h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--veryDarkMagenta);
+}
+
+header > p {
+  margin-top: 1.66em;
+  color: var(--darkGrayishMagenta);
+  font-weight: 400;
+  font-size: 1.18em;
+}
+
+/* ------------- Main ---------------- */
+
+/* ------ Star Cards ------ */
+
+.star_card_container {
+  margin-bottom: 3.266em;
+}
+
+.star_card {
+  background-color: var(--lightGrayishMagenta);
+  border-radius: 0.533em;
+  padding-top: 1em;
+  padding-bottom: 1.2em;
+  margin-bottom: 1em;
+}
+
+.stars > img {
+  margin-right: 0.1em;
+}
+
+.star_card > h2 {
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--veryDarkMagenta);
+  margin-top: 0.5em;
+}
+
+/* ------ Comment Cards ------ */
+
+.comment_card {
+  background-color: var(--veryDarkMagenta);
+  border-radius: 0.466em;
+  padding: 2.533em 2.2em;
+  text-align: left;
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+
+.comment_card > img {
+  width: 3em;
+  height: 3em;
+  border-radius: 1.5em;
+  float: left;
+  margin-right: 1.533em;
+}
+
+.comment_card > .name {
+  color: var(--lightGrayishMagenta);
+  padding-top: 0.3em;
+  font-weight: 700;
+}
+
+.comment_card > .title {
+  color: var(--softPink);
+  font-weight: 400;
+}
+
+.comment_card > .comment {
+  color: var(--lightGrayishMagenta);
+  margin-top: 2em;
+  font-weight: 500;
+  padding-right: 1em;
+}
+
+/* ------------- Footer ---------------- */
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 6em;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+  }
+}
