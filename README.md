@@ -44,31 +44,24 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learned how to create stairs effect for some divs that can scale:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div style="--indent: 0;"></div>
+<div style="--indent: 1;"></div>
+<div style="--indent: 2;"></div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+div {
+  /* This is the important line */
+  margin-left: calc(var(--indent) * 15px);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Stair Effect](https://stackoverflow.com/q/50471853/9387538) - This helped me for create stair effect. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author

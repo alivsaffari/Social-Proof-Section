@@ -34,7 +34,7 @@ body {
     url(./images/bg-pattern-bottom-mobile.svg);
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, contain;
+  background-size: auto, auto;
   background-color: var(--white);
   font-size: 15px;
 }
@@ -150,9 +150,71 @@ footer a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   body {
     background-image: url(./images/bg-pattern-top-desktop.svg),
       url(./images/bg-pattern-bottom-desktop.svg);
+  }
+
+  .container {
+    margin: 7.66em 11.06em 0 11.06em;
+    display: block;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    width: 50%;
+    float: left;
+    margin-top: 0;
+    text-align: left;
+    padding-right: 9em;
+  }
+
+  header > h1 {
+    margin-top: 0;
+    font-size: 3.5em;
+  }
+
+  header > p {
+    line-height: 1.5;
+  }
+
+  /* ------------ Main ------------- */
+  /* --------- Star Cards ---------- */
+  .star_card_container {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .star_card {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    width: 29.66em;
+    height: 3.66em;
+    padding: 0 0 0 2em;
+    margin-left: calc(var(--indent) * 3.2em);
+  }
+
+  .star_card > h2 {
+    margin: 0;
+  }
+
+  /* -------- Comment Cards -------- */
+  .comment_card_container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2em;
+  }
+
+  .comment_card {
+    width: 23.333em;
+    height: 15.6em;
+    flex-basis: 33.33%;
+    margin-top: calc(var(--indent) * 1em);
   }
 }
