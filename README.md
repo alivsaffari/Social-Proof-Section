@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/mobile-first-social-proof-section-solution-TmuRsFMMV5)
 - Live Site URL: [Live Demo](https://social-proof-section-ivory.vercel.app/)
 
 ## My process
@@ -62,7 +62,6 @@ div {
 ### Useful resources
 
 - [Stair Effect](https://stackoverflow.com/q/50471853/9387538) - This helped me for create stair effect. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
