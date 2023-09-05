@@ -29,21 +29,23 @@ html {
 body {
   padding: 0;
   margin: 0;
+
   font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+
   background-image: url(./images/bg-pattern-top-mobile.svg),
     url(./images/bg-pattern-bottom-mobile.svg);
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
   background-color: var(--white);
-  font-size: 15px;
 }
 
-.container {
+main {
   margin: auto 24px;
   text-align: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -67,6 +69,7 @@ header > p {
   color: var(--darkGrayishMagenta);
   font-weight: 400;
   font-size: 1.18em;
+  line-height: 1.5;
 }
 
 /* ------------- Main ---------------- */
@@ -75,6 +78,7 @@ header > p {
 
 .star_card_container {
   margin-bottom: 3.266em;
+  width: 100%;
 }
 
 .star_card {
@@ -94,6 +98,7 @@ header > p {
   font-size: 1em;
   color: var(--veryDarkMagenta);
   margin-top: 0.5em;
+  margin-bottom: 0;
 }
 
 /* ------ Comment Cards ------ */
@@ -138,13 +143,13 @@ header > p {
 /* ------------- Footer ---------------- */
 
 footer {
-  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
   font-size: 11px;
   text-align: center;
   margin-top: 6em;
+  align-self: flex-end;
 }
 footer a {
   color: hsl(228, 45%, 44%);
@@ -156,9 +161,9 @@ footer a {
       url(./images/bg-pattern-bottom-desktop.svg);
   }
 
-  .container {
+  main {
     margin: 7.66em 11.06em 0 11.06em;
-    display: block;
+    flex-direction: row;
   }
 
   /* ---------- Header ---------- */
@@ -174,11 +179,6 @@ footer a {
     margin-top: 0;
     font-size: 3.5em;
   }
-
-  header > p {
-    line-height: 1.5;
-  }
-
   /* ------------ Main ------------- */
   /* --------- Star Cards ---------- */
   .star_card_container {
